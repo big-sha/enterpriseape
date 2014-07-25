@@ -22,7 +22,9 @@
           <li><%= link_to "Invoices", invoices_path %></li>
           <li><%= link_to "Login", root_path %></li>
         </ul>
-  
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
   <%= yield %> <%# This is where the views get displayed. Goes in this block %>
 </div>
 <%# <p>Hey I'm Here</p> This will now show on every page after the code because it is after the yield %>
