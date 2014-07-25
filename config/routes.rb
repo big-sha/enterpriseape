@@ -13,5 +13,5 @@ Rails.application.routes.draw do
 
   resources :invoices
 
-  root to: 'welcome#index' <%# root is not a get request %>
+  root to: 'welcome#index' 
 end
