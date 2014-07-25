@@ -7,8 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
+  
+<%#  <p>Hey I'm Here</p>  This will now show on every page before the code because it is before the yield %>
 
-<%= yield %>
+<%= link_to "Home", root_path %>
+<%= link_to "About Us", welcome_about_path %>
+<%= link_to "Contact", welcome_contact_path %>
+<%= link_to "Features", welcome_features_path %>
+<%= link_to "FAQ's", welcome_faq_path %>
+<%= link_to "Pricing", welcome_pricing_path %>
+  <%= link_to "Invoices", invoices_path %>
+<%= link_to "Login", root_path %>
+  
+  <%= yield %> <%# This is where the views get displayed. Goes in this block %>
+
+<%# <p>Hey I'm Here</p> This will now show on every page after the code because it is after the yield %>
+
 
 </body>
 </html>
